@@ -76,14 +76,54 @@ ws_int32_t main( ws_int32_t argc, ws_char_t** argv )
 ```
 as you will create a server with ws,
 
-the first thing should be done is:ws_server_init, which init the framework.
+the first thing should be done is:
+```c
+ws_int32_t ws_server_init(const ws_char_t *working_path, const ws_char_t *log_path,
+    const ws_char_t *lock_path, const ws_char_t *pid_path);
+```
+which init the framework.
 
 then you should set the log path, which can help you to diagnose. 
 
-before you create a server, you should define the server with ws_server_tcp_t 
+before you create a server, you should define the server with struct:
+```c
+struct ws_server_tcp_s
+{
+    ws_int32_t server_index;
+    ws_int32_t server_type;
+    ws_int32_t data_type;
+    ws_ip_t    ip;
+    ws_port_t  port;
+    ws_int32_t (*on_recv)(ws_int32_t server_index, ws_int32_t conn_index, ws_itf_header_t* itf);
+    ws_int32_t (*on_connect)(ws_int32_t server_index, ws_int32_t conn_index);
+    ws_int32_t (*on_closed)(ws_int32_t server_index, ws_int32_t conn_index);
+    ws_int32_t (*on_error)(ws_int32_t server_index, ws_int32_t conn_index, ws_int32_t error);
+    ws_int32_t (*on_raw_recv)(ws_int32_t server_index, ws_int32_t conn_index, ws_char_t *data, ws_char_t data_len);
+};
 
-or ws_server_udp_t struct.
 
-use ws_tcp_server_add funtion to add your server.
+struct ws_server_udp_s
+{
+    ws_int32_t server_index;
+    ws_int32_t server_type;
+    ws_ip_t    ip;
+    ws_port_t  port;
+    ws_int32_t (*on_recv)(ws_int32_t server_index, ws_ip_t ip, ws_port_t port, ws_itf_header_t* itf, ws_int32_t real_size);
+    ws_int32_t (*on_raw_recv)(ws_int32_t server_index, ws_ip_t ip, ws_port_t port, ws_char_t *data, ws_int32_t data_len);
+};
 
-ws_server_run function run the server immediately as you see.
+``` 
+
+
+then add server as below:
+
+```c
+ws_int32_t ws_tcp_server_add(ws_server_tcp_t *server);
+ws_int32_t ws_udp_server_add(ws_server_udp_t *server);
+```
+
+after all, run the server immediately as you see.
+```c
+ws_int32_t ws_server_run();
+```
+
