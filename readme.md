@@ -8,11 +8,9 @@ Right now ws(WhatsServer) support udp and tcp, on linux/windows/mac.
 the api sample:
 ```c
 ws_int32_t tcp_recv_handle(ws_int32_t server_index, ws_int32_t conn_index, 
-
 ws_itf_header_t* itf)
 {
     printf("recv tcp msg, server:%d,conn:%d, size:%d\n", server_index,
-
      conn_index, itf->size);
     return YMZ_OK;
 }
@@ -30,7 +28,8 @@ ws_int32_t tcp_on_closed(ws_int32_t server_index, ws_int32_t conn_index)
 }
 
 
-ws_int32_t udp_recv_handle(ws_int32_t server_index, ws_ip_t ip, ws_port_t port, ws_itf_header_t* itf, ws_int32_t real_size)
+ws_int32_t udp_recv_handle(ws_int32_t server_index, ws_ip_t ip, ws_port_t 
+port, ws_itf_header_t* itf, ws_int32_t real_size)
 {
     printf("recv udp msg, server:%d, size:%d\n", server_index, real_size);
     return YMZ_OK;
@@ -102,10 +101,8 @@ struct ws_server_tcp_s
     ws_int32_t (*on_connect)(ws_int32_t server_index, ws_int32_t conn_index);
     ws_int32_t (*on_closed)(ws_int32_t server_index, ws_int32_t conn_index);
     ws_int32_t (*on_error)(ws_int32_t server_index, ws_int32_t conn_index,
-
      ws_int32_t error);
     ws_int32_t (*on_raw_recv)(ws_int32_t server_index, ws_int32_t conn_index, 
-
         ws_char_t *data, ws_char_t data_len);
 };
 
@@ -117,10 +114,8 @@ struct ws_server_udp_s
     ws_ip_t    ip;
     ws_port_t  port;
     ws_int32_t (*on_recv)(ws_int32_t server_index, ws_ip_t ip, ws_port_t port,
-
      ws_itf_header_t* itf, ws_int32_t real_size);
     ws_int32_t (*on_raw_recv)(ws_int32_t server_index, ws_ip_t ip, ws_port_t
-
      port, ws_char_t *data, ws_int32_t data_len);
 };
 
