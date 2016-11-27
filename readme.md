@@ -75,8 +75,15 @@ ws_int32_t main( ws_int32_t argc, ws_char_t** argv )
 
 ```
 as you will create a server with ws,
+
 the first thing should be done is:ws_server_init, which init the framework.
+
 then you should set the log path, which can help you to diagnose. 
-before you create a server, you should define the server with ws_server_tcp_t or ws_server_udp_t struct.
+
+before you create a server, you should define the server with ws_server_tcp_t 
+
+or ws_server_udp_t struct.
+
 use ws_tcp_server_add funtion to add your server.
+
 ws_server_run function run the server immediately as you see.
