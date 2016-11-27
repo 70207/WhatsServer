@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4D98B6B6-58DA-4002-BA18-3256F8C48B3C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WhatsServer</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\lib\mysql\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src\;$(ProjectDir)..\src\conf;$(ProjectDir)..\src\common;$(ProjectDir)..\src\conn;$(ProjectDir)..\src\core;$(ProjectDir)..\src\cycle;$(ProjectDir)..\src\event;$(ProjectDir)..\src\log;$(ProjectDir)..\src\mem;$(ProjectDir)..\src\net;$(ProjectDir)..\src\os;$(ProjectDir)..\src\tools;$(ProjectDir)..\include;$(ProjectDir)..\src\stat;$(ProjectDir)..\src\db;$(ProjectDir)..\src\http;$(ProjectDir)..\src\websocket;$(ProjectDir)..\third\include\pthread;$(ProjectDir)..\third\include\openssl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;pthreadVC2.lib;pthreadVCE2.lib;pthreadVSE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\third\lib\pthread\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /y $(ProjectDir)..\third\lib\pthread\x86\*.dll $(OutDir)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\whatsserver.h" />
+    <ClInclude Include="..\include\ws_log.h" />
+    <ClInclude Include="..\include\ws_types.h" />
+    <ClInclude Include="..\src\common\ws_inet.h" />
+    <ClInclude Include="..\src\common\ws_std.h" />
+    <ClInclude Include="..\src\conf\ws_conf.h" />
+    <ClInclude Include="..\src\conn\ws_conn.h" />
+    <ClInclude Include="..\src\conn\ws_conn_http.h" />
+    <ClInclude Include="..\src\conn\ws_conn_icmp.h" />
+    <ClInclude Include="..\src\conn\ws_conn_recv.h" />
+    <ClInclude Include="..\src\conn\ws_conn_send.h" />
+    <ClInclude Include="..\src\conn\ws_conn_send_chain.h" />
+    <ClInclude Include="..\src\conn\ws_conn_websocket.h" />
+    <ClInclude Include="..\src\core\ws_core.h" />
+    <ClInclude Include="..\src\core\ws_core_adapter.h" />
+    <ClInclude Include="..\src\cycle\ws_cycle.h" />
+    <ClInclude Include="..\src\event\ws_event.h" />
+    <ClInclude Include="..\src\event\ws_event_config.h" />
+    <ClInclude Include="..\src\event\ws_event_timer.h" />
+    <ClInclude Include="..\src\http\ws_http.h" />
+    <ClInclude Include="..\src\log\ws_log_core.h" />
+    <ClInclude Include="..\src\mem\ws_chain.h" />
+    <ClInclude Include="..\src\mem\ws_mem.h" />
+    <ClInclude Include="..\src\net\ws_net.h" />
+    <ClInclude Include="..\src\os\ws_cpu.h" />
+    <ClInclude Include="..\src\os\ws_daemon.h" />
+    <ClInclude Include="..\src\os\ws_os.h" />
+    <ClInclude Include="..\src\os\ws_process.h" />
+    <ClInclude Include="..\src\os\ws_process_pipe.h" />
+    <ClInclude Include="..\src\tools\ws_cln_timer.h" />
+    <ClInclude Include="..\src\tools\ws_file.h" />
+    <ClInclude Include="..\src\tools\ws_rbtree.h" />
+    <ClInclude Include="..\src\tools\ws_smap.h" />
+    <ClInclude Include="..\src\tools\ws_socket.h" />
+    <ClInclude Include="..\src\tools\ws_str.h" />
+    <ClInclude Include="..\src\tools\ws_thread.h" />
+    <ClInclude Include="..\src\tools\ws_time.h" />
+    <ClInclude Include="..\src\tools\ws_tools.h" />
+    <ClInclude Include="..\src\websocket\ws_websocket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\conf\ws_conf.c" />
+    <ClCompile Include="..\src\conn\ws_conn.c" />
+    <ClCompile Include="..\src\conn\ws_conn_http.c" />
+    <ClCompile Include="..\src\conn\ws_conn_icmp.c" />
+    <ClCompile Include="..\src\conn\ws_conn_recv.c" />
+    <ClCompile Include="..\src\conn\ws_conn_send.c" />
+    <ClCompile Include="..\src\conn\ws_conn_send_chain.c" />
+    <ClCompile Include="..\src\conn\ws_conn_udp.c" />
+    <ClCompile Include="..\src\conn\ws_conn_websocket.c" />
+    <ClCompile Include="..\src\conn\ws_listen.c" />
+    <ClCompile Include="..\src\core\whatsserver.c" />
+    <ClCompile Include="..\src\core\ws_core.c" />
+    <ClCompile Include="..\src\core\ws_core_adapter.c" />
+    <ClCompile Include="..\src\cycle\ws_cycle.c" />
+    <ClCompile Include="..\src\event\modules\ws_event_epoll.c" />
+    <ClCompile Include="..\src\event\modules\ws_event_select.c" />
+    <ClCompile Include="..\src\event\ws_event.c" />
+    <ClCompile Include="..\src\event\ws_event_accept.c" />
+    <ClCompile Include="..\src\event\ws_event_timer.c" />
+    <ClCompile Include="..\src\http\ws_http.c" />
+    <ClCompile Include="..\src\log\ws_log.c" />
+    <ClCompile Include="..\src\mem\ws_chain.c" />
+    <ClCompile Include="..\src\mem\ws_mem.c" />
+    <ClCompile Include="..\src\net\ws_net.c" />
+    <ClCompile Include="..\src\os\ws_cpu.c" />
+    <ClCompile Include="..\src\os\ws_daemon.c" />
+    <ClCompile Include="..\src\os\ws_os.c" />
+    <ClCompile Include="..\src\os\ws_process.c" />
+    <ClCompile Include="..\src\os\ws_process_pipe.c" />
+    <ClCompile Include="..\src\tools\ws_cln_timer.c" />
+    <ClCompile Include="..\src\tools\ws_file.c" />
+    <ClCompile Include="..\src\tools\ws_rbtree.c" />
+    <ClCompile Include="..\src\tools\ws_smap.c" />
+    <ClCompile Include="..\src\tools\ws_socket.c" />
+    <ClCompile Include="..\src\tools\ws_str.c" />
+    <ClCompile Include="..\src\tools\ws_thread.c" />
+    <ClCompile Include="..\src\tools\ws_time.c" />
+    <ClCompile Include="..\src\tools\ws_tools.c" />
+    <ClCompile Include="..\src\tse1.c" />
+    <ClCompile Include="..\src\ts_daemon.c" />
+    <ClCompile Include="..\src\websocket\ws_websocket.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WhatsServer", "WhatsServer.vcxproj", "{4D98B6B6-58DA-4002-BA18-3256F8C48B3C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test.vcxproj", "{3CDA381A-0D91-44FE-AA4D-44E7F412D98F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D98B6B6-58DA-4002-BA18-3256F8C48B3C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4D98B6B6-58DA-4002-BA18-3256F8C48B3C}.Debug|Win32.Build.0 = Debug|Win32
+		{4D98B6B6-58DA-4002-BA18-3256F8C48B3C}.Debug|x64.ActiveCfg = Debug|Win32
+		{4D98B6B6-58DA-4002-BA18-3256F8C48B3C}.Release|Win32.ActiveCfg = Release|Win32
+		{4D98B6B6-58DA-4002-BA18-3256F8C48B3C}.Release|Win32.Build.0 = Release|Win32
+		{4D98B6B6-58DA-4002-BA18-3256F8C48B3C}.Release|x64.ActiveCfg = Release|Win32
+		{3CDA381A-0D91-44FE-AA4D-44E7F412D98F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3CDA381A-0D91-44FE-AA4D-44E7F412D98F}.Debug|Win32.Build.0 = Debug|Win32
+		{3CDA381A-0D91-44FE-AA4D-44E7F412D98F}.Debug|x64.ActiveCfg = Debug|x64
+		{3CDA381A-0D91-44FE-AA4D-44E7F412D98F}.Debug|x64.Build.0 = Debug|x64
+		{3CDA381A-0D91-44FE-AA4D-44E7F412D98F}.Release|Win32.ActiveCfg = Release|Win32
+		{3CDA381A-0D91-44FE-AA4D-44E7F412D98F}.Release|Win32.Build.0 = Release|Win32
+		{3CDA381A-0D91-44FE-AA4D-44E7F412D98F}.Release|x64.ActiveCfg = Release|x64
+		{3CDA381A-0D91-44FE-AA4D-44E7F412D98F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

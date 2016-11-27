@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="build">
+      <UniqueIdentifier>{cc697fac-e025-491a-9b61-496ddaf5b094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="conf">
+      <UniqueIdentifier>{37d38b98-fa54-4679-9b93-8ab1eeaf0350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="conn">
+      <UniqueIdentifier>{39c4d99b-0110-46ef-b87e-30ef06a658c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{602d56aa-3846-4861-87f1-bbaf74380c66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cycle">
+      <UniqueIdentifier>{08a6896c-512a-4da8-9915-f9ee55b47d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event">
+      <UniqueIdentifier>{68fde0f3-eb07-4308-9a9b-5b3ee3d152b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{e8a01219-1f21-4a20-b165-659915387d1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem">
+      <UniqueIdentifier>{e269d018-280a-477c-adc7-d664a7f64f3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{57cde877-1358-44ea-ba9e-21a4cb49273f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os">
+      <UniqueIdentifier>{9078e152-ee35-440d-b513-362914b2d808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{cc51d175-22ad-45cb-bea4-a55b1715a20e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{fd84345f-e08f-4ddc-a20f-9379faadd528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{5ec27bee-3bde-433d-9cfd-0aa7e42bfcea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="websocket">
+      <UniqueIdentifier>{952b82cd-84b8-4798-b225-62ef251cbdaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{ac85de13-c58a-4025-a5cf-5ab53e420f38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event\modules">
+      <UniqueIdentifier>{ebcd9f35-3ef8-45b4-a854-a2178ced7fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{5f87ef70-83c7-45c9-b74d-f9fdf3ec5ecf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\common\ws_inet.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\ws_std.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\conf\ws_conf.h">
+      <Filter>conf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\conn\ws_conn.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\conn\ws_conn_http.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\conn\ws_conn_icmp.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\conn\ws_conn_recv.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\conn\ws_conn_send.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\conn\ws_conn_send_chain.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\conn\ws_conn_websocket.h">
+      <Filter>conn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cycle\ws_cycle.h">
+      <Filter>cycle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\event\ws_event.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\event\ws_event_config.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\event\ws_event_timer.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\http\ws_http.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\mem\ws_chain.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\mem\ws_mem.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\ws_net.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\os\ws_cpu.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\os\ws_daemon.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\os\ws_os.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\os\ws_process.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\os\ws_process_pipe.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_socket.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_str.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\websocket\ws_websocket.h">
+      <Filter>websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_cln_timer.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_file.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_rbtree.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_smap.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_thread.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_time.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_tools.h">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\ws_core.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\ws_core_adapter.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ws_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ws_log.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\log\ws_log_core.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\whatsserver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\ts_daemon.c" />
+    <ClCompile Include="..\src\tse1.c" />
+    <ClCompile Include="..\src\conf\ws_conf.c">
+      <Filter>conf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\conn\ws_conn.c">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\conn\ws_conn_http.c">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\conn\ws_conn_icmp.c">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\conn\ws_conn_recv.c">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\conn\ws_conn_send.c">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\conn\ws_conn_send_chain.c">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\conn\ws_conn_udp.c">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\conn\ws_conn_websocket.c">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\conn\ws_listen.c">
+      <Filter>conn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cycle\ws_cycle.c">
+      <Filter>cycle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event\ws_event.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event\ws_event_accept.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event\ws_event_timer.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event\modules\ws_event_select.c">
+      <Filter>event\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\event\modules\ws_event_epoll.c">
+      <Filter>event\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\http\ws_http.c">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\log\ws_log.c">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\mem\ws_chain.c">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\mem\ws_mem.c">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\ws_net.c">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\os\ws_cpu.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\os\ws_daemon.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\os\ws_os.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\os\ws_process.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\os\ws_process_pipe.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_socket.c">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_str.c">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\websocket\ws_websocket.c">
+      <Filter>websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_cln_timer.c">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_file.c">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_rbtree.c">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_smap.c">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_thread.c">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_time.c">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_tools.c">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\ws_core.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\ws_core_adapter.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\whatsserver.c">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\makefile" />
+  </ItemGroup>
+</Project>

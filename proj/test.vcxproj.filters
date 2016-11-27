@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\tools\ws_cln_timer.c">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_file.c">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_rbtree.c">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_smap.c">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_socket.c">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_str.c">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_thread.c">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_time.c">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\ws_tools.c">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\log\ws_log.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\mem\ws_chain.c">
+      <Filter>src\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\mem\ws_mem.c">
+      <Filter>src\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\test\ws_client.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{63206adb-bd78-45ea-b679-af409969dde5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tools">
+      <UniqueIdentifier>{3a884f2f-6942-4130-a7c4-4dc1a4769cae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\log">
+      <UniqueIdentifier>{7cfd8e76-b5f7-40e4-9b99-b4efd9ab0911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mem">
+      <UniqueIdentifier>{1bb0fe54-ad9f-421d-ada3-7352dfb27511}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\tools\ws_cln_timer.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_file.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_rbtree.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_smap.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_socket.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_str.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_thread.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_time.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\ws_tools.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\log\ws_log.h">
+      <Filter>src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\mem\ws_chain.h">
+      <Filter>src\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\mem\ws_mem.h">
+      <Filter>src\mem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

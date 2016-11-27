@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38AD40AF1DEB16E9008F017E /* ymz_log.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40941DEB16E8008F017E /* ymz_log.c */; };
+		38AD40B01DEB16E9008F017E /* ymz_chain.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40971DEB16E8008F017E /* ymz_chain.c */; };
+		38AD40B11DEB16E9008F017E /* ymz_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40991DEB16E8008F017E /* ymz_mem.c */; };
+		38AD40B21DEB16E9008F017E /* ymz_cln_timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD409C1DEB16E8008F017E /* ymz_cln_timer.c */; };
+		38AD40B31DEB16E9008F017E /* ymz_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD409E1DEB16E8008F017E /* ymz_file.c */; };
+		38AD40B41DEB16E9008F017E /* ymz_rbtree.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40A01DEB16E8008F017E /* ymz_rbtree.c */; };
+		38AD40B51DEB16E9008F017E /* ymz_smap.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40A21DEB16E8008F017E /* ymz_smap.c */; };
+		38AD40B61DEB16E9008F017E /* ymz_socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40A41DEB16E9008F017E /* ymz_socket.c */; };
+		38AD40B71DEB16E9008F017E /* ymz_str.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40A61DEB16E9008F017E /* ymz_str.c */; };
+		38AD40B81DEB16E9008F017E /* ymz_thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40A81DEB16E9008F017E /* ymz_thread.c */; };
+		38AD40B91DEB16E9008F017E /* ymz_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40AA1DEB16E9008F017E /* ymz_time.c */; };
+		38AD40BA1DEB16E9008F017E /* ymz_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40AC1DEB16E9008F017E /* ymz_tools.c */; };
+		38AD40BB1DEB16E9008F017E /* ymz_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 38AD40AE1DEB16E9008F017E /* ymz_client.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38AD40801DEB168E008F017E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		38AD40821DEB168E008F017E /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		38AD408D1DEB16E8008F017E /* ymz_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_log.h; sourceTree = "<group>"; };
+		38AD408E1DEB16E8008F017E /* ymz_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_types.h; sourceTree = "<group>"; };
+		38AD408F1DEB16E8008F017E /* yumeiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yumeiz.h; sourceTree = "<group>"; };
+		38AD40911DEB16E8008F017E /* ymz_inet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_inet.h; sourceTree = "<group>"; };
+		38AD40921DEB16E8008F017E /* ymz_std.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_std.h; sourceTree = "<group>"; };
+		38AD40941DEB16E8008F017E /* ymz_log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_log.c; sourceTree = "<group>"; };
+		38AD40951DEB16E8008F017E /* ymz_log_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_log_core.h; sourceTree = "<group>"; };
+		38AD40971DEB16E8008F017E /* ymz_chain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_chain.c; sourceTree = "<group>"; };
+		38AD40981DEB16E8008F017E /* ymz_chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_chain.h; sourceTree = "<group>"; };
+		38AD40991DEB16E8008F017E /* ymz_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_mem.c; sourceTree = "<group>"; };
+		38AD409A1DEB16E8008F017E /* ymz_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_mem.h; sourceTree = "<group>"; };
+		38AD409C1DEB16E8008F017E /* ymz_cln_timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_cln_timer.c; sourceTree = "<group>"; };
+		38AD409D1DEB16E8008F017E /* ymz_cln_timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_cln_timer.h; sourceTree = "<group>"; };
+		38AD409E1DEB16E8008F017E /* ymz_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_file.c; sourceTree = "<group>"; };
+		38AD409F1DEB16E8008F017E /* ymz_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_file.h; sourceTree = "<group>"; };
+		38AD40A01DEB16E8008F017E /* ymz_rbtree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_rbtree.c; sourceTree = "<group>"; };
+		38AD40A11DEB16E8008F017E /* ymz_rbtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_rbtree.h; sourceTree = "<group>"; };
+		38AD40A21DEB16E8008F017E /* ymz_smap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_smap.c; sourceTree = "<group>"; };
+		38AD40A31DEB16E9008F017E /* ymz_smap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_smap.h; sourceTree = "<group>"; };
+		38AD40A41DEB16E9008F017E /* ymz_socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_socket.c; sourceTree = "<group>"; };
+		38AD40A51DEB16E9008F017E /* ymz_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_socket.h; sourceTree = "<group>"; };
+		38AD40A61DEB16E9008F017E /* ymz_str.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_str.c; sourceTree = "<group>"; };
+		38AD40A71DEB16E9008F017E /* ymz_str.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_str.h; sourceTree = "<group>"; };
+		38AD40A81DEB16E9008F017E /* ymz_thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_thread.c; sourceTree = "<group>"; };
+		38AD40A91DEB16E9008F017E /* ymz_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_thread.h; sourceTree = "<group>"; };
+		38AD40AA1DEB16E9008F017E /* ymz_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_time.c; sourceTree = "<group>"; };
+		38AD40AB1DEB16E9008F017E /* ymz_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_time.h; sourceTree = "<group>"; };
+		38AD40AC1DEB16E9008F017E /* ymz_tools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ymz_tools.c; sourceTree = "<group>"; };
+		38AD40AD1DEB16E9008F017E /* ymz_tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ymz_tools.h; sourceTree = "<group>"; };
+		38AD40AE1DEB16E9008F017E /* ymz_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ymz_client.c; path = ../test/ymz_client.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38AD407F1DEB168E008F017E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38AD40791DEB168E008F017E = {
+			isa = PBXGroup;
+			children = (
+				38AD408C1DEB16E8008F017E /* include */,
+				38AD40901DEB16E8008F017E /* common */,
+				38AD40931DEB16E8008F017E /* log */,
+				38AD40961DEB16E8008F017E /* mem */,
+				38AD409B1DEB16E8008F017E /* tools */,
+				38AD40AE1DEB16E9008F017E /* ymz_client.c */,
+				38AD40831DEB168E008F017E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38AD40831DEB168E008F017E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38AD40821DEB168E008F017E /* test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38AD408C1DEB16E8008F017E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				38AD408D1DEB16E8008F017E /* ymz_log.h */,
+				38AD408E1DEB16E8008F017E /* ymz_types.h */,
+				38AD408F1DEB16E8008F017E /* yumeiz.h */,
+			);
+			name = include;
+			path = ../include;
+			sourceTree = "<group>";
+		};
+		38AD40901DEB16E8008F017E /* common */ = {
+			isa = PBXGroup;
+			children = (
+				38AD40911DEB16E8008F017E /* ymz_inet.h */,
+				38AD40921DEB16E8008F017E /* ymz_std.h */,
+			);
+			name = common;
+			path = ../src/common;
+			sourceTree = "<group>";
+		};
+		38AD40931DEB16E8008F017E /* log */ = {
+			isa = PBXGroup;
+			children = (
+				38AD40941DEB16E8008F017E /* ymz_log.c */,
+				38AD40951DEB16E8008F017E /* ymz_log_core.h */,
+			);
+			name = log;
+			path = ../src/log;
+			sourceTree = "<group>";
+		};
+		38AD40961DEB16E8008F017E /* mem */ = {
+			isa = PBXGroup;
+			children = (
+				38AD40971DEB16E8008F017E /* ymz_chain.c */,
+				38AD40981DEB16E8008F017E /* ymz_chain.h */,
+				38AD40991DEB16E8008F017E /* ymz_mem.c */,
+				38AD409A1DEB16E8008F017E /* ymz_mem.h */,
+			);
+			name = mem;
+			path = ../src/mem;
+			sourceTree = "<group>";
+		};
+		38AD409B1DEB16E8008F017E /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				38AD409C1DEB16E8008F017E /* ymz_cln_timer.c */,
+				38AD409D1DEB16E8008F017E /* ymz_cln_timer.h */,
+				38AD409E1DEB16E8008F017E /* ymz_file.c */,
+				38AD409F1DEB16E8008F017E /* ymz_file.h */,
+				38AD40A01DEB16E8008F017E /* ymz_rbtree.c */,
+				38AD40A11DEB16E8008F017E /* ymz_rbtree.h */,
+				38AD40A21DEB16E8008F017E /* ymz_smap.c */,
+				38AD40A31DEB16E9008F017E /* ymz_smap.h */,
+				38AD40A41DEB16E9008F017E /* ymz_socket.c */,
+				38AD40A51DEB16E9008F017E /* ymz_socket.h */,
+				38AD40A61DEB16E9008F017E /* ymz_str.c */,
+				38AD40A71DEB16E9008F017E /* ymz_str.h */,
+				38AD40A81DEB16E9008F017E /* ymz_thread.c */,
+				38AD40A91DEB16E9008F017E /* ymz_thread.h */,
+				38AD40AA1DEB16E9008F017E /* ymz_time.c */,
+				38AD40AB1DEB16E9008F017E /* ymz_time.h */,
+				38AD40AC1DEB16E9008F017E /* ymz_tools.c */,
+				38AD40AD1DEB16E9008F017E /* ymz_tools.h */,
+			);
+			name = tools;
+			path = ../src/tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38AD40811DEB168E008F017E /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38AD40891DEB168E008F017E /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				38AD407E1DEB168E008F017E /* Sources */,
+				38AD407F1DEB168E008F017E /* Frameworks */,
+				38AD40801DEB168E008F017E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = 38AD40821DEB168E008F017E /* test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38AD407A1DEB168E008F017E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "peter chenxiaofei";
+				TargetAttributes = {
+					38AD40811DEB168E008F017E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 38AD407D1DEB168E008F017E /* Build configuration list for PBXProject "test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 38AD40791DEB168E008F017E;
+			productRefGroup = 38AD40831DEB168E008F017E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38AD40811DEB168E008F017E /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38AD407E1DEB168E008F017E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38AD40B71DEB16E9008F017E /* ymz_str.c in Sources */,
+				38AD40B31DEB16E9008F017E /* ymz_file.c in Sources */,
+				38AD40B21DEB16E9008F017E /* ymz_cln_timer.c in Sources */,
+				38AD40B41DEB16E9008F017E /* ymz_rbtree.c in Sources */,
+				38AD40B11DEB16E9008F017E /* ymz_mem.c in Sources */,
+				38AD40B91DEB16E9008F017E /* ymz_time.c in Sources */,
+				38AD40BB1DEB16E9008F017E /* ymz_client.c in Sources */,
+				38AD40B01DEB16E9008F017E /* ymz_chain.c in Sources */,
+				38AD40B61DEB16E9008F017E /* ymz_socket.c in Sources */,
+				38AD40BA1DEB16E9008F017E /* ymz_tools.c in Sources */,
+				38AD40AF1DEB16E9008F017E /* ymz_log.c in Sources */,
+				38AD40B81DEB16E9008F017E /* ymz_thread.c in Sources */,
+				38AD40B51DEB16E9008F017E /* ymz_smap.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		38AD40871DEB168E008F017E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		38AD40881DEB168E008F017E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		38AD408A1DEB168E008F017E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38AD408B1DEB168E008F017E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38AD407D1DEB168E008F017E /* Build configuration list for PBXProject "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38AD40871DEB168E008F017E /* Debug */,
+				38AD40881DEB168E008F017E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38AD40891DEB168E008F017E /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38AD408A1DEB168E008F017E /* Debug */,
+				38AD408B1DEB168E008F017E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38AD407A1DEB168E008F017E /* Project object */;
+}
